@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main_box {
+    background-image: url("photo.jpg");
+    height: 100vh;
+    background-size: cover;
+}
+
+.btn_one {
+    color:white;
+    font-size: 30px;
+    position: absolute;
+    left: 16px;
+    line-height: 60px;
+}
+
+.btn_one i {
+    transition: all 0.3s linear;
+}
+
+.sidebar_menu {
+    position: fixed;
+    left: -300px;
+    height: 100vh;
+    width: 300px;
+    background-color: rgb(255, 255, 255, 0.1);  
+    box-shadow: 0 0 6px rgb(255,255,255,0.5);
+    transition: all 0.25s linear;
+}
+
+.sidebar_menu .logo {
+    position: absolute;
+    width: 100%;
+}
+
+.sidebar_menu .logo a {
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+    position: absolute;
+    left: 60px;
+    padding-top: 15px;
+}
+
+.btn_two {
+    position: absolute;
+    left: 270px;
+    top: 13px;
+    font-size: x-large;
+}
+
+#check {
+    display: none;
+}
+
+.menu ul {
+    position: absolute;
+    top: 60px;
+    left: 10px;
+}
+
+.menu ul li {
+    list-style: none;
+    font-size: 17px;
+    color: white;
+    margin:10px;
+    height: 40px;
+    width: 250px;
+    line-height: 40px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu li i {
+    padding-right: 13px;
+    padding-left:5px;
+    cursor: pointer;
+}
+
+.social_media {
+    position: absolute;
+    bottom: 30px;
+    left: 30%;
+}
+
+.social_media a i{
+    color: white;
+    padding: 5px;
+    opacity: 0.5;
+}
+
+.btn_two i {
+    transition: all 0.25s linear;
+}
+
+.btn_two i:hover {
+    cursor: pointer;
+    color:white;
+    transform: scale(1.1);
+}
+
+.social_media a i {
+    transition: all 0.25s linear;
+}
+
+.social_media a i:hover {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.menu li {
+    transition: all 0.25s linear;
+}
+
+.menu li:hover {
+    box-shadow: 0 0 4px white;
+    cursor: pointer;
+}
+
+.btn_one i:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#check:checked ~ .sidebar_menu{
+    left:0;
+}
+
+
+#check:checked ~ .btn_one i{
+    display: none;
+}
+
+#check:checked ~ .sidebar_menu .logo a {
+    left: 20px;
+}
+
+
